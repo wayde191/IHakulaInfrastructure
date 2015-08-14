@@ -18,7 +18,19 @@ s.source_files  = "#{s.name}/#{s.name}/*.{h}"
 
 s.subspec 'Common' do |cm|
     cm.source_files = "#{s.name}/#{s.name}/Common/*.{h,m}"
-    cm.framework = "UIKit", "Foundation"
+end
+
+s.subspec 'Tools' do |tools|
+
+    tools.subspec 'iHDebug' do |debug|
+        debug.source_files = "#{s.name}/#{s.name}/Tools/iHDebug/*.{h,m}"
+    end
+
+    tools.subspec 'iHSingletonCloud' do |singleton|
+        singleton.dependency "#{s.name}/Tools/iHDebug"
+        singleton.source_files = "#{s.name}/#{s.name}/Tools/iHSingletonCloud/*.{h,m}"
+    end
+
 end
 
 end
