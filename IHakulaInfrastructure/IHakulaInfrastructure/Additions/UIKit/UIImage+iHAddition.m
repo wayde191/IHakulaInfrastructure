@@ -7,8 +7,6 @@
 //
 
 #import "UIImage+iHAddition.h"
-#import "iHSingletonCloud.h"
-#import "iHLog.h"
 
 @implementation UIImage (iHAddition)
 
@@ -183,11 +181,6 @@
                      secondImgName:(NSString *)sname
 {
     if (!fname || !sname) {
-        iHLog *log = [iHSingletonCloud getSharedInstanceByClassNameString:@"iHLog"];
-        [log pushLog:@"CombineTwoImgsIntoOne"
-             message:@"The first image name or the second image name is nil"
-                type:iH_LOGS_EXCEPTION
-                file:nil function:nil line:0];
         return nil;
     }
     
@@ -208,11 +201,6 @@
                                   secondImg:(UIImage *)simg
 {
     if (!fimg || !simg) {
-        iHLog *log = [iHSingletonCloud getSharedInstanceByClassNameString:@"iHLog"];
-        [log pushLog:@"CombineTwoImgsIntoOne"
-             message:@"The first image or the second image is nil"
-                type:iH_LOGS_EXCEPTION
-                file:nil function:nil line:0];
         return nil;
     }
     
