@@ -9,8 +9,6 @@
 #import "iHArithmeticKit.h"
 #import "CJSONDeserializer.h"
 #import "CJSONSerializer.h"
-#import "iHLog.h"
-#import "iHSingletonCloud.h"
 
 @implementation iHArithmeticKit
 
@@ -53,13 +51,6 @@
     NSError *e = nil;
     NSDictionary *responseDic = [NSDictionary dictionaryWithDictionary:
                                  [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&e]];
-    if (e) {
-        iHLog *theLog = [iHSingletonCloud getSharedInstanceByClassNameString:@"iHLog"];
-        [theLog pushLog:@"getJsonData"
-                message:[NSString stringWithFormat:@"Code:%ld *** Domain:%@ *** UserInfo:%@", (long)e.code, e.domain, e.userInfo]
-                   type:iH_LOGS_EXCEPTION
-                   file:__FILE__ function:__func__ line:__LINE__];
-    }
     
     return responseDic;
 }
@@ -70,13 +61,6 @@
     NSError *e = nil;
     NSDictionary *responseDic = [NSDictionary dictionaryWithDictionary:
                                         [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&e]];
-    if (e) {
-        iHLog *theLog = [iHSingletonCloud getSharedInstanceByClassNameString:@"iHLog"];
-        [theLog pushLog:@"getJsonData"
-                message:[NSString stringWithFormat:@"Code:%ld *** Domain:%@ *** UserInfo:%@", (long)e.code, e.domain, e.userInfo]
-                   type:iH_LOGS_EXCEPTION
-                   file:__FILE__ function:__func__ line:__LINE__];
-    }
     
     return responseDic;
 }
