@@ -6,14 +6,109 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3F91DCC662E951F685676CB8F0A29F69 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4AAC77BE5A338FE5587D3BEEC4867 /* Reachability-dummy.m */; };
+		43E9D203B103ACEC0E9F9D669D18AEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		5A35EB338EB2F46A81ED945CD8673D52 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 771061FB5D22A6166731D5E0F1927C88 /* Reachability.m */; };
+		894D1723A8E5692A046BA4044F920335 /* Pods-IHakulaInfrastructureTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA4A9FD021E4D3DE6300AE80FB7534 /* Pods-IHakulaInfrastructureTests-dummy.m */; };
+		9930C7DDAD17C7F56DDFCAC316F89E3C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */; };
+		99766FB0EC6C26F3C15DE61F20954166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		9A2680E849052DC68398ACD673EE9995 /* Pods-IHakulaInfrastructure-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02011DCB8FC1391552020584FD38F7 /* Pods-IHakulaInfrastructure-dummy.m */; };
+		D4F4D6824C9F9CA8B99477A50FF1694B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		E9A3EFDA08F79DD651E72FD1F20B9335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7231DA109D517AA206A98154903A5F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
+			remoteInfo = Reachability;
+		};
+		E1E657F57E372D7753B09B06A0AFDA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
+			remoteInfo = Reachability;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1A02011DCB8FC1391552020584FD38F7 /* Pods-IHakulaInfrastructure-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IHakulaInfrastructure-dummy.m"; sourceTree = "<group>"; };
+		238F3F37444E7A12B969F17B765AC8FA /* Pods-IHakulaInfrastructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IHakulaInfrastructureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE4AAC77BE5A338FE5587D3BEEC4867 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		3811A1ECE30883476F114E42572826EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38B887A08325E283F1B898372010C0A7 /* Pods-IHakulaInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IHakulaInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
+		4B669C692E51948B635CF2135904EED2 /* libPods-IHakulaInfrastructureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHakulaInfrastructureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5670DDC0E55DB830C2D1178D2A1356D4 /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
+		6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76027522A16793E46563D736C44FF00B /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
+		771061FB5D22A6166731D5E0F1927C88 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		98DB7C1ABDAFE8DDD8BACDB9CC9AC3FE /* Pods-IHakulaInfrastructureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IHakulaInfrastructureTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		996821A6A1048FC75E3AB5FF4034718B /* Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reachability-Private.xcconfig"; sourceTree = "<group>"; };
+		9CEA4A9FD021E4D3DE6300AE80FB7534 /* Pods-IHakulaInfrastructureTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IHakulaInfrastructureTests-dummy.m"; sourceTree = "<group>"; };
+		9DA1E1A2D1C8351FF0008824EBC26F58 /* Pods-IHakulaInfrastructureTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IHakulaInfrastructureTests-resources.sh"; sourceTree = "<group>"; };
+		AC832E9919A6BA707D559041352C34BE /* Pods-IHakulaInfrastructureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IHakulaInfrastructureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6A2020F366941DBE548D23173A861F7 /* Pods-IHakulaInfrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IHakulaInfrastructure.release.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2376AF9D5EC747490F2A48915B6903C /* libPods-IHakulaInfrastructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHakulaInfrastructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38C8ED3795446434250C03A46A06101 /* Pods-IHakulaInfrastructure-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IHakulaInfrastructure-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5B1EAA47A51532E8E276A8E0349538B /* Pods-IHakulaInfrastructure-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IHakulaInfrastructure-acknowledgements.plist"; sourceTree = "<group>"; };
+		F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F5D2870DA88792B32ABE92795DD62E60 /* Pods-IHakulaInfrastructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IHakulaInfrastructureTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC155F71AF3E4277B2550E028E97C5E1 /* Pods-IHakulaInfrastructure-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IHakulaInfrastructure-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		270119B09072163C9EB79804781525BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99766FB0EC6C26F3C15DE61F20954166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3E2A04D727B9C000C785AC87533512 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F4D6824C9F9CA8B99477A50FF1694B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E7163BC7B028C8D2732B25DB0E0182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E9D203B103ACEC0E9F9D669D18AEDA /* Foundation.framework in Frameworks */,
+				E9A3EFDA08F79DD651E72FD1F20B9335 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		2F8C316B2A511190DE037DE5FE0BF5F9 /* Pods-IHakulaInfrastructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC832E9919A6BA707D559041352C34BE /* Pods-IHakulaInfrastructureTests-acknowledgements.markdown */,
+				98DB7C1ABDAFE8DDD8BACDB9CC9AC3FE /* Pods-IHakulaInfrastructureTests-acknowledgements.plist */,
+				9CEA4A9FD021E4D3DE6300AE80FB7534 /* Pods-IHakulaInfrastructureTests-dummy.m */,
+				9DA1E1A2D1C8351FF0008824EBC26F58 /* Pods-IHakulaInfrastructureTests-resources.sh */,
+				238F3F37444E7A12B969F17B765AC8FA /* Pods-IHakulaInfrastructureTests.debug.xcconfig */,
+				F5D2870DA88792B32ABE92795DD62E60 /* Pods-IHakulaInfrastructureTests.release.xcconfig */,
+			);
+			name = "Pods-IHakulaInfrastructureTests";
+			path = "Target Support Files/Pods-IHakulaInfrastructureTests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9EF902C898ACC11D14AD351608F774 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -22,27 +117,151 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D02F67554E14C3100F274620CC9E3885 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				8E1DF15ECA011FC0780F9D90EBED7E24 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8E1DF15ECA011FC0780F9D90EBED7E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ED30A0CD709D420C3F7F136E85305 /* Pods-IHakulaInfrastructure */,
+				2F8C316B2A511190DE037DE5FE0BF5F9 /* Pods-IHakulaInfrastructureTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9025C102DC5D5055FFDE68E4DCA971EF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */,
+				771061FB5D22A6166731D5E0F1927C88 /* Reachability.m */,
+				E16CC8CC5B6C30E608A0DDA0BC1A4945 /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		AC6ED30A0CD709D420C3F7F136E85305 /* Pods-IHakulaInfrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C38C8ED3795446434250C03A46A06101 /* Pods-IHakulaInfrastructure-acknowledgements.markdown */,
+				C5B1EAA47A51532E8E276A8E0349538B /* Pods-IHakulaInfrastructure-acknowledgements.plist */,
+				1A02011DCB8FC1391552020584FD38F7 /* Pods-IHakulaInfrastructure-dummy.m */,
+				FC155F71AF3E4277B2550E028E97C5E1 /* Pods-IHakulaInfrastructure-resources.sh */,
+				38B887A08325E283F1B898372010C0A7 /* Pods-IHakulaInfrastructure.debug.xcconfig */,
+				B6A2020F366941DBE548D23173A861F7 /* Pods-IHakulaInfrastructure.release.xcconfig */,
+			);
+			name = "Pods-IHakulaInfrastructure";
+			path = "Target Support Files/Pods-IHakulaInfrastructure";
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				C2376AF9D5EC747490F2A48915B6903C /* libPods-IHakulaInfrastructure.a */,
+				4B669C692E51948B635CF2135904EED2 /* libPods-IHakulaInfrastructureTests.a */,
+				6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		D02F67554E14C3100F274620CC9E3885 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				9025C102DC5D5055FFDE68E4DCA971EF /* Reachability */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E16CC8CC5B6C30E608A0DDA0BC1A4945 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76027522A16793E46563D736C44FF00B /* Reachability.xcconfig */,
+				996821A6A1048FC75E3AB5FF4034718B /* Reachability-Private.xcconfig */,
+				2DE4AAC77BE5A338FE5587D3BEEC4867 /* Reachability-dummy.m */,
+				5670DDC0E55DB830C2D1178D2A1356D4 /* Reachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reachability";
+			sourceTree = "<group>";
+		};
+		FB9EF902C898ACC11D14AD351608F774 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3811A1ECE30883476F114E42572826EF /* Foundation.framework */,
+				F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8AFFEC7E1D399137649154652B4B014 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9930C7DDAD17C7F56DDFCAC316F89E3C /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1893DE70459B9C5430E1E53597BF9817 /* Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7308906685EEDEACADE55318549938F7 /* Build configuration list for PBXNativeTarget "Reachability" */;
+			buildPhases = (
+				1640A5B607EF8F9B5569D3175E1F0B02 /* Sources */,
+				91E7163BC7B028C8D2732B25DB0E0182 /* Frameworks */,
+				E8AFFEC7E1D399137649154652B4B014 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reachability;
+			productName = Reachability;
+			productReference = 6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A0B6FFDD59D7805C77ADD1F73991A6C6 /* Pods-IHakulaInfrastructureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19602A3584F2BD7C736D4E9984BE6814 /* Build configuration list for PBXNativeTarget "Pods-IHakulaInfrastructureTests" */;
+			buildPhases = (
+				17924153BCADD48B78E1B522D4CE65E2 /* Sources */,
+				270119B09072163C9EB79804781525BD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0964E3DF9E191570E2F6EE9BDC714A29 /* PBXTargetDependency */,
+			);
+			name = "Pods-IHakulaInfrastructureTests";
+			productName = "Pods-IHakulaInfrastructureTests";
+			productReference = 4B669C692E51948B635CF2135904EED2 /* libPods-IHakulaInfrastructureTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F38C9652A3F9B3B49A7ECD8B0960640E /* Pods-IHakulaInfrastructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA12553574F159E9ED881C1F427F955 /* Build configuration list for PBXNativeTarget "Pods-IHakulaInfrastructure" */;
+			buildPhases = (
+				5BBE2131D233BE290D7513249C569D35 /* Sources */,
+				2B3E2A04D727B9C000C785AC87533512 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6B108B0C02049790F1ABE47D5534A08 /* PBXTargetDependency */,
+			);
+			name = "Pods-IHakulaInfrastructure";
+			productName = "Pods-IHakulaInfrastructure";
+			productReference = C2376AF9D5EC747490F2A48915B6903C /* libPods-IHakulaInfrastructure.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -63,12 +282,58 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F38C9652A3F9B3B49A7ECD8B0960640E /* Pods-IHakulaInfrastructure */,
+				A0B6FFDD59D7805C77ADD1F73991A6C6 /* Pods-IHakulaInfrastructureTests */,
+				1893DE70459B9C5430E1E53597BF9817 /* Reachability */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		1640A5B607EF8F9B5569D3175E1F0B02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F91DCC662E951F685676CB8F0A29F69 /* Reachability-dummy.m in Sources */,
+				5A35EB338EB2F46A81ED945CD8673D52 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17924153BCADD48B78E1B522D4CE65E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894D1723A8E5692A046BA4044F920335 /* Pods-IHakulaInfrastructureTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BBE2131D233BE290D7513249C569D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2680E849052DC68398ACD673EE9995 /* Pods-IHakulaInfrastructure-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0964E3DF9E191570E2F6EE9BDC714A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
+			targetProxy = 7231DA109D517AA206A98154903A5F4E /* PBXContainerItemProxy */;
+		};
+		C6B108B0C02049790F1ABE47D5534A08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
+			targetProxy = E1E657F57E372D7753B09B06A0AFDA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -95,14 +360,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -134,21 +399,144 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		14CE942778AF02F26F9DE504F9308FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238F3F37444E7A12B969F17B765AC8FA /* Pods-IHakulaInfrastructureTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F1FA5D88F4BF30E9E844C15DC6233B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D2870DA88792B32ABE92795DD62E60 /* Pods-IHakulaInfrastructureTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CD42A31B797C17FEE71AB6DF850403E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996821A6A1048FC75E3AB5FF4034718B /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		63CB564145B7E72F58FBD479DE351448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996821A6A1048FC75E3AB5FF4034718B /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		875E9EE39A36E30464C2411DBB711F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A2020F366941DBE548D23173A861F7 /* Pods-IHakulaInfrastructure.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		880DE4B9D62E5A63F6D6C8F1BAB1901B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B887A08325E283F1B898372010C0A7 /* Pods-IHakulaInfrastructure.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19602A3584F2BD7C736D4E9984BE6814 /* Build configuration list for PBXNativeTarget "Pods-IHakulaInfrastructureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CE942778AF02F26F9DE504F9308FD5 /* Debug */,
+				4F1FA5D88F4BF30E9E844C15DC6233B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */,
-				511103F7F15A7E8F83B268EA03462CAB /* Release */,
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA12553574F159E9ED881C1F427F955 /* Build configuration list for PBXNativeTarget "Pods-IHakulaInfrastructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880DE4B9D62E5A63F6D6C8F1BAB1901B /* Debug */,
+				875E9EE39A36E30464C2411DBB711F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7308906685EEDEACADE55318549938F7 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CB564145B7E72F58FBD479DE351448 /* Debug */,
+				5CD42A31B797C17FEE71AB6DF850403E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

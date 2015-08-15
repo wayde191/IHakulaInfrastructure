@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.platform                 = :ios
 s.ios.deployment_target    = '7.1'
-s.version                  = "0.1.8"
+s.version                  = "0.2.0"
 s.name                     = "IHakulaInfrastructure"
 s.author                   = { "Wayde Sun" => "wsun191@gmail.com" }
 s.homepage                 = "https://github.com/wayde191/IHakulaInfrastructure"
@@ -12,6 +12,7 @@ s.license               = { :type => "MIT", :file => "LICENSE" }
 
 s.requires_arc             = true
 s.framework                = "UIKit", "Foundation"
+s.dependency 'Reachability', '~> 3.2'
 
 s.public_header_files = "#{s.name}/#{s.name}/**/*.{h}"
 s.source_files  = "#{s.name}/#{s.name}/*.{h}"

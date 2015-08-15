@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6622A73CA183BA815250D4D9 /* libPods-IHakulaInfrastructureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACEEEF8752A5972BE136E9A /* libPods-IHakulaInfrastructureTests.a */; };
+		A07EE97641B9A9F9925ABEC8 /* libPods-IHakulaInfrastructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 791781F54F616EBC9AA07D37 /* libPods-IHakulaInfrastructure.a */; };
 		BA0CB2A41B7E33EA001294C3 /* IHakulaInfrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CB2A31B7E33EA001294C3 /* IHakulaInfrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA0CB2AA1B7E33EA001294C3 /* IHakulaInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0CB29E1B7E33EA001294C3 /* IHakulaInfrastructure.framework */; };
 		BA0CB2B11B7E33EA001294C3 /* IHakulaInfrastructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB2B01B7E33EA001294C3 /* IHakulaInfrastructureTests.m */; };
@@ -100,8 +102,6 @@
 		BA0CB50D1B7E3803001294C3 /* iHLogCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB5071B7E3803001294C3 /* iHLogCenter.m */; };
 		BA0CB50E1B7E3803001294C3 /* iHLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CB5081B7E3803001294C3 /* iHLogManager.h */; };
 		BA0CB50F1B7E3803001294C3 /* iHLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB5091B7E3803001294C3 /* iHLogManager.m */; };
-		BA0CB5121B7E3AC2001294C3 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CB5101B7E3AC2001294C3 /* Reachability.h */; };
-		BA0CB5131B7E3AC2001294C3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB5111B7E3AC2001294C3 /* Reachability.m */; };
 		BA0CB5151B7E3BF9001294C3 /* IHakulaInfrastructure.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +116,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25E5F7CD383A9F63AA49A40C /* Pods-IHakulaInfrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructure/Pods-IHakulaInfrastructure.release.xcconfig"; sourceTree = "<group>"; };
+		41757FA2449BD54617E43313 /* Pods-IHakulaInfrastructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructureTests/Pods-IHakulaInfrastructureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		791781F54F616EBC9AA07D37 /* libPods-IHakulaInfrastructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHakulaInfrastructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ACEEEF8752A5972BE136E9A /* libPods-IHakulaInfrastructureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHakulaInfrastructureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0CB29E1B7E33EA001294C3 /* IHakulaInfrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IHakulaInfrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0CB2A21B7E33EA001294C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0CB2A31B7E33EA001294C3 /* IHakulaInfrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHakulaInfrastructure.h; sourceTree = "<group>"; };
@@ -212,9 +216,9 @@
 		BA0CB5071B7E3803001294C3 /* iHLogCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHLogCenter.m; sourceTree = "<group>"; };
 		BA0CB5081B7E3803001294C3 /* iHLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHLogManager.h; sourceTree = "<group>"; };
 		BA0CB5091B7E3803001294C3 /* iHLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHLogManager.m; sourceTree = "<group>"; };
-		BA0CB5101B7E3AC2001294C3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		BA0CB5111B7E3AC2001294C3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IHakulaInfrastructure.podspec; path = ../IHakulaInfrastructure.podspec; sourceTree = "<group>"; };
+		D315D4D1CC8E9A1F02FD4A46 /* Pods-IHakulaInfrastructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructureTests/Pods-IHakulaInfrastructureTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB8A4B438F1A9A015FD1A97E /* Pods-IHakulaInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructure/Pods-IHakulaInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07EE97641B9A9F9925ABEC8 /* libPods-IHakulaInfrastructure.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,12 +235,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0CB2AA1B7E33EA001294C3 /* IHakulaInfrastructure.framework in Frameworks */,
+				6622A73CA183BA815250D4D9 /* libPods-IHakulaInfrastructureTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BA8F2724A635E0289D1587B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A4B438F1A9A015FD1A97E /* Pods-IHakulaInfrastructure.debug.xcconfig */,
+				25E5F7CD383A9F63AA49A40C /* Pods-IHakulaInfrastructure.release.xcconfig */,
+				41757FA2449BD54617E43313 /* Pods-IHakulaInfrastructureTests.debug.xcconfig */,
+				D315D4D1CC8E9A1F02FD4A46 /* Pods-IHakulaInfrastructureTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B465A16FD2DBB250501CEF9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				791781F54F616EBC9AA07D37 /* libPods-IHakulaInfrastructure.a */,
+				8ACEEEF8752A5972BE136E9A /* libPods-IHakulaInfrastructureTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0CB2941B7E33EA001294C3 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +269,8 @@
 				BA0CB2A01B7E33EA001294C3 /* IHakulaInfrastructure */,
 				BA0CB2AD1B7E33EA001294C3 /* IHakulaInfrastructureTests */,
 				BA0CB29F1B7E33EA001294C3 /* Products */,
+				7BA8F2724A635E0289D1587B /* Pods */,
+				B465A16FD2DBB250501CEF9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -462,8 +490,6 @@
 		BA0CB46D1B7E367F001294C3 /* iHNetworkMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				BA0CB5101B7E3AC2001294C3 /* Reachability.h */,
-				BA0CB5111B7E3AC2001294C3 /* Reachability.m */,
 				BA0CB46E1B7E367F001294C3 /* iHNetworkMonitor.h */,
 				BA0CB46F1B7E367F001294C3 /* iHNetworkMonitor.m */,
 			);
@@ -565,7 +591,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0CB3AC1B7E3552001294C3 /* iHCacheCenter.h in Headers */,
-				BA0CB5121B7E3AC2001294C3 /* Reachability.h in Headers */,
 				BA0CB4F91B7E367F001294C3 /* NSScanner_Extensions.h in Headers */,
 				BA0CB3901B7E3552001294C3 /* NSLocale+iHAddition.h in Headers */,
 				BA0CB39C1B7E3552001294C3 /* UIDevice+iHAddition.h in Headers */,
@@ -625,10 +650,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0CB2B41B7E33EA001294C3 /* Build configuration list for PBXNativeTarget "IHakulaInfrastructure" */;
 			buildPhases = (
+				45AA6A9707F84AB2A75A2076 /* Check Pods Manifest.lock */,
 				BA0CB2991B7E33EA001294C3 /* Sources */,
 				BA0CB29A1B7E33EA001294C3 /* Frameworks */,
 				BA0CB29B1B7E33EA001294C3 /* Headers */,
 				BA0CB29C1B7E33EA001294C3 /* Resources */,
+				56F39CABD6B52C3E11F64756 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -643,9 +670,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0CB2B71B7E33EA001294C3 /* Build configuration list for PBXNativeTarget "IHakulaInfrastructureTests" */;
 			buildPhases = (
+				77E154DC6AF74C769A62127E /* Check Pods Manifest.lock */,
 				BA0CB2A51B7E33EA001294C3 /* Sources */,
 				BA0CB2A61B7E33EA001294C3 /* Frameworks */,
 				BA0CB2A71B7E33EA001294C3 /* Resources */,
+				C1A4F57FF149EE344FEBBE92 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -711,6 +740,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45AA6A9707F84AB2A75A2076 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56F39CABD6B52C3E11F64756 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IHakulaInfrastructure/Pods-IHakulaInfrastructure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E154DC6AF74C769A62127E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A4F57FF149EE344FEBBE92 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IHakulaInfrastructureTests/Pods-IHakulaInfrastructureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA0CB2991B7E33EA001294C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -725,7 +817,6 @@
 				BA0CB4FC1B7E367F001294C3 /* CJSONDeserializer.m in Sources */,
 				BA0CB4FE1B7E367F001294C3 /* CJSONScanner.m in Sources */,
 				BA0CB3B21B7E3552001294C3 /* iHImgCache.m in Sources */,
-				BA0CB5131B7E3AC2001294C3 /* Reachability.m in Sources */,
 				BA0CB3931B7E3552001294C3 /* NSMutableArray+iHAddition.m in Sources */,
 				BA0CB5001B7E367F001294C3 /* CJSONSerializer.m in Sources */,
 				BA0CB3A51B7E3552001294C3 /* UITextField+iHAddition.m in Sources */,
@@ -869,6 +960,7 @@
 		};
 		BA0CB2B51B7E33EA001294C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8A4B438F1A9A015FD1A97E /* Pods-IHakulaInfrastructure.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -884,6 +976,7 @@
 		};
 		BA0CB2B61B7E33EA001294C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E5F7CD383A9F63AA49A40C /* Pods-IHakulaInfrastructure.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -899,6 +992,7 @@
 		};
 		BA0CB2B81B7E33EA001294C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41757FA2449BD54617E43313 /* Pods-IHakulaInfrastructureTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -916,6 +1010,7 @@
 		};
 		BA0CB2B91B7E33EA001294C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D315D4D1CC8E9A1F02FD4A46 /* Pods-IHakulaInfrastructureTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
