@@ -31,6 +31,7 @@ end
 
 s.subspec 'DB' do |db|
     db.dependency "#{s.name}/Kits"
+    db.dependency "#{s.name}/Additions"
     db.dependency "#{s.name}/Tools/iHDebug"
     db.dependency "#{s.name}/Tools/iHSingletonCloud"
     db.dependency "#{s.name}/Tools/iHNetworkMonitor"
