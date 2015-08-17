@@ -14,5 +14,7 @@
 #import "iHCommons.h"
 #import "iHDebug.h"
 #import "iHLog.h"
+#import "iHKits.h"
+#import "iHPubSub.h"
 
 #endif

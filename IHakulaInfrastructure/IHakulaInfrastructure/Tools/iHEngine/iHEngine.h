@@ -10,8 +10,6 @@
 
 #define iH_SUCCESS YES
 #define iH_FAILURE NO
-//#define HOST_NAME           @"www.ihakula.com"
-//#define SERVICE_ROOT_URL    @"http://www.ihakula.com/api/index.php/ifinancial/"
 
 @interface iHEngine : NSObject {
     @public
@@ -22,5 +20,6 @@
     
 + (id)sharedInstance;
 + (BOOL)start;
++ (BOOL)startWithHostName:(NSString *)hostName byServiceRootUrl:(NSString *)rootUrl;
 
 @end

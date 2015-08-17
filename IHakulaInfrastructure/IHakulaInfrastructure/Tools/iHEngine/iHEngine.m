@@ -13,6 +13,7 @@
 #import "iHCacheCenter.h"
 #import "iHLog.h"
 #import "iHCommonMacros.h"
+#import "iHEngineConf.h"
 
 @interface iHEngine ()
 - (BOOL)setupLogSystem:(NSDictionary *)dic;
@@ -61,15 +62,39 @@ void uncaughtExceptionHandler(NSException *e){
     iHEngine *engine = [iHEngine sharedInstance];
     
     //Get configuration
-    NSString *confPath = [[NSBundle mainBundle] pathForResource:@"conf" ofType:@"plist"];
-    NSDictionary *confDic = [NSDictionary dictionaryWithContentsOfFile:confPath];
+//    NSString *confPath = [[NSBundle mainBundle] pathForResource:@"conf" ofType:@"plist"];
+//    NSDictionary *confDic = [NSDictionary dictionaryWithContentsOfFile:confPath];
     
     //Setup log system
-    if (![engine setupLogSystem:[confDic objectForKey:@"logInfo"]]) {
+    if (![engine setupLogSystem]) {
         engine.howEngineDoing = iH_FAILURE;
     }
     
     return engine.howEngineDoing;
+}
+
++ (BOOL)startWithHostName:(NSString *)hostName byServiceRootUrl:(NSString *)rootUrl {
+    BOOL engineDoing = [self start];
+    if (!engineDoing) {
+        return engineDoing;
+    }
+    
+    //Build up singleton instance firstly
+    iHEngine *engine = [iHEngine sharedInstance];
+    
+    //Setup network monitor
+    if (![engine setupNetworkMonitor:hostName]) {
+        engine.howEngineDoing = iH_FAILURE;
+        return engine.howEngineDoing;
+    }
+    
+    //Setup Request environment
+    if (![engine setupRequestEnv:rootUrl]) {
+        engine.howEngineDoing = iH_FAILURE;
+        return engine.howEngineDoing;
+    }
+    
+    return engineDoing;
 }
 
 - (id)init
@@ -81,13 +106,12 @@ void uncaughtExceptionHandler(NSException *e){
     return self;
 }
 
-- (BOOL)setupLogSystem:(NSDictionary *)dic
+- (BOOL)setupLogSystem
 {
-    NSAssert(dic != nil, @"Log info dictionary is not empty");
     iHLog *log = [iHSingletonCloud getSharedInstanceByClassNameString:@"iHLog"];
-    log.isLogMessage = [(NSNumber *)[dic valueForKey:@"isLogMessage"] boolValue];
-    log.fileName = [dic valueForKey:@"logFileName"];
-    log.filePostfix = [dic valueForKey:@"logFilePostfix"];
+    log.isLogMessage = kLoggingSwitchOn;
+    log.fileName = IH_LOG_FILE_NAME;
+    log.filePostfix = IH_LOG_FILE_EXT;
     
     return YES;
 }
