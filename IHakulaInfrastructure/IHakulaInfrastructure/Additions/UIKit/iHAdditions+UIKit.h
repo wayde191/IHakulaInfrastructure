@@ -17,5 +17,6 @@
 #import "UITextField+iHAddition.h"
 #import "UIView+iHAddition.h"
 #import "UIImage+iHAddition.h"
+#import "UIViewController+NavTab.h"
 
 #endif

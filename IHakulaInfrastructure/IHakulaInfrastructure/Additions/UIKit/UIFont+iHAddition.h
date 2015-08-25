@@ -12,4 +12,9 @@
 
 - (CGFloat)ihLineHeight;
 
++ (UIFont*)boldSTHeitiFontOfSize:(CGFloat)size;
++ (UIFont*)regularSTHeitiFontOfSize:(CGFloat)size;
++ (UIFont*)thinSTHeitiFontOfSize:(CGFloat)size;
++ (UIFont*)ultraLightSTHeitiFontOfSize:(CGFloat)size;
+
 @end

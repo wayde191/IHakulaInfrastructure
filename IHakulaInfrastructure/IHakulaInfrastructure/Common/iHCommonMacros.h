@@ -50,12 +50,17 @@
 #define IS_IOS_6    floorf([[UIDevice currentDevice].systemVersion floatValue]) == 6.0 ? 1 : 0
 #define IS_IOS_7    floorf([[UIDevice currentDevice].systemVersion floatValue]) == 7.0 ? 1 : 0
 #define IS_IOS_8    floorf([[UIDevice currentDevice].systemVersion floatValue]) == 8.0 ? 1 : 0
+
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
 #define IPHONE_SCREEN_WIDTH         320
 #define IPAD_SCREEN_WIDTH           768
 #define IPAD_SCREEN_HEIGHT          1024
 #define IPHONE_SCREEN_5_HEIGHT      568
 #define IPHONE_SCREEN_HEIGHT        480
-#define IPHONE_DEVICE_HEIGHT    [[UIScreen mainScreen] bounds].size.height;
+#define IPHONE_DEVICE_HEIGHT        [[UIScreen mainScreen] bounds].size.height;
+#define ScreenBoundHeight           [UIScreen mainScreen].bounds.size.height
+#define ScreenBoundWidth            [UIScreen mainScreen].bounds.size.width
 
 #define IH_DEVICE_HEIGHT    [[UIScreen mainScreen] bounds].size.height
 #define IH_DEVICE_WIDTH     [[UIScreen mainScreen] bounds].size.width
@@ -69,13 +74,5 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - App
 #define APP_DID_ENTER_BACKGROUND    @"AppDidEnterBackground"
-
-#ifndef SERVICE_ROOT_URL
-//#define SERVICE_ROOT_URL            @"http://www.baidu.com"
-#endif
-
-#ifndef HOST_NAME
-//#define HOST_NAME                   @"www.baidu.com"
-#endif
 
 #endif

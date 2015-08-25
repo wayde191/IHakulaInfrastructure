@@ -103,6 +103,11 @@
 		BA0CB50E1B7E3803001294C3 /* iHLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CB5081B7E3803001294C3 /* iHLogManager.h */; };
 		BA0CB50F1B7E3803001294C3 /* iHLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB5091B7E3803001294C3 /* iHLogManager.m */; };
 		BA0CB5151B7E3BF9001294C3 /* IHakulaInfrastructure.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */; };
+		BA49C95D1B8CBB3E003F1113 /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49C9591B8CBB3E003F1113 /* UIColor-Expanded.h */; };
+		BA49C95E1B8CBB3E003F1113 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49C95A1B8CBB3E003F1113 /* UIColor-Expanded.m */; };
+		BA49C95F1B8CBB3E003F1113 /* UIViewController+NavTab.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49C95B1B8CBB3E003F1113 /* UIViewController+NavTab.h */; };
+		BA49C9601B8CBB3E003F1113 /* UIViewController+NavTab.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49C95C1B8CBB3E003F1113 /* UIViewController+NavTab.m */; };
+		BA49C9641B8CBF56003F1113 /* iHEngineConf.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49C9631B8CBF56003F1113 /* iHEngineConf.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +222,11 @@
 		BA0CB5081B7E3803001294C3 /* iHLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHLogManager.h; sourceTree = "<group>"; };
 		BA0CB5091B7E3803001294C3 /* iHLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHLogManager.m; sourceTree = "<group>"; };
 		BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IHakulaInfrastructure.podspec; path = ../IHakulaInfrastructure.podspec; sourceTree = "<group>"; };
+		BA49C9591B8CBB3E003F1113 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		BA49C95A1B8CBB3E003F1113 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		BA49C95B1B8CBB3E003F1113 /* UIViewController+NavTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavTab.h"; sourceTree = "<group>"; };
+		BA49C95C1B8CBB3E003F1113 /* UIViewController+NavTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavTab.m"; sourceTree = "<group>"; };
+		BA49C9631B8CBF56003F1113 /* iHEngineConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHEngineConf.h; sourceTree = "<group>"; };
 		D315D4D1CC8E9A1F02FD4A46 /* Pods-IHakulaInfrastructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructureTests/Pods-IHakulaInfrastructureTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB8A4B438F1A9A015FD1A97E /* Pods-IHakulaInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHakulaInfrastructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IHakulaInfrastructure/Pods-IHakulaInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -354,6 +364,10 @@
 		BA0CB2C81B7E3552001294C3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BA49C9591B8CBB3E003F1113 /* UIColor-Expanded.h */,
+				BA49C95A1B8CBB3E003F1113 /* UIColor-Expanded.m */,
+				BA49C95B1B8CBB3E003F1113 /* UIViewController+NavTab.h */,
+				BA49C95C1B8CBB3E003F1113 /* UIViewController+NavTab.m */,
 				BA0CB2C91B7E3552001294C3 /* iHAdditions+UIKit.h */,
 				BA0CB2CA1B7E3552001294C3 /* UIAlertView+iHAddition.h */,
 				BA0CB2CB1B7E3552001294C3 /* UIAlertView+iHAddition.m */,
@@ -453,6 +467,7 @@
 		BA0CB4591B7E367F001294C3 /* iHEngine */ = {
 			isa = PBXGroup;
 			children = (
+				BA49C9631B8CBF56003F1113 /* iHEngineConf.h */,
 				BA0CB45A1B7E367F001294C3 /* conf.plist */,
 				BA0CB45B1B7E367F001294C3 /* iHEngine.h */,
 				BA0CB45C1B7E367F001294C3 /* iHEngine.m */,
@@ -606,6 +621,7 @@
 				BA0CB3AE1B7E3552001294C3 /* iHCacheDelegate.h in Headers */,
 				BA0CB4F11B7E367F001294C3 /* CDataScanner.h in Headers */,
 				BA0CB3B31B7E3552001294C3 /* iHImgOperation.h in Headers */,
+				BA49C95D1B8CBB3E003F1113 /* UIColor-Expanded.h in Headers */,
 				BA0CB3A01B7E3552001294C3 /* UIImage+iHAddition.h in Headers */,
 				BA0CB3A61B7E3552001294C3 /* UIView+iHAddition.h in Headers */,
 				BA0CB3961B7E3552001294C3 /* iHAdditions.h in Headers */,
@@ -626,12 +642,14 @@
 				BA0CB4DD1B7E367F001294C3 /* iHSingletonCloud.h in Headers */,
 				BA0CB50E1B7E3803001294C3 /* iHLogManager.h in Headers */,
 				BA0CB3941B7E3552001294C3 /* NSString+iHAddition.h in Headers */,
+				BA49C9641B8CBF56003F1113 /* iHEngineConf.h in Headers */,
 				BA0CB39E1B7E3552001294C3 /* UIFont+iHAddition.h in Headers */,
 				BA0CB4D51B7E367F001294C3 /* iHMemory.h in Headers */,
 				BA0CB4DB1B7E367F001294C3 /* iHPubSub.h in Headers */,
 				BA0CB3B61B7E3552001294C3 /* iHArithmeticKit.h in Headers */,
 				BA0CB4C91B7E367F001294C3 /* iHEngine.h in Headers */,
 				BA0CB4FF1B7E367F001294C3 /* CJSONSerializer.h in Headers */,
+				BA49C95F1B8CBB3E003F1113 /* UIViewController+NavTab.h in Headers */,
 				BA0CB3B11B7E3552001294C3 /* iHImgCache.h in Headers */,
 				BA0CB4FB1B7E367F001294C3 /* CJSONDeserializer.h in Headers */,
 				BA0CB3A41B7E3552001294C3 /* UITextField+iHAddition.h in Headers */,
@@ -829,8 +847,10 @@
 				BA0CB4F61B7E367F001294C3 /* NSCharacterSet_Extensions.m in Sources */,
 				BA0CB3911B7E3552001294C3 /* NSLocale+iHAddition.m in Sources */,
 				BA0CB39B1B7E3552001294C3 /* UIButton+iHAddition.m in Sources */,
+				BA49C95E1B8CBB3E003F1113 /* UIColor-Expanded.m in Sources */,
 				BA0CB3A31B7E3552001294C3 /* UILabel+iHAddition.m in Sources */,
 				BA0CB4F21B7E367F001294C3 /* CDataScanner.m in Sources */,
+				BA49C9601B8CBB3E003F1113 /* UIViewController+NavTab.m in Sources */,
 				BA0CB5021B7E367F001294C3 /* XMLDictionary.m in Sources */,
 				BA0CB3951B7E3552001294C3 /* NSString+iHAddition.m in Sources */,
 				BA0CB39F1B7E3552001294C3 /* UIFont+iHAddition.m in Sources */,
