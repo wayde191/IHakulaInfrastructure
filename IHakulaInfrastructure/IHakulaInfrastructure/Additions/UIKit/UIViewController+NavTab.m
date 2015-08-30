@@ -40,7 +40,7 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor colorWithRed:(190)/255.0f green:(220)/255.0f blue:(250)/255.0f alpha:1] forState:UIControlStateHighlighted];
-    btn.titleLabel.font = [UIFont systemFontOfSize:15];
+    btn.titleLabel.font = [UIFont regularSTHeitiFontOfSize:15];
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [btn sizeToFit];
     UIBarButtonItem *btnItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
@@ -152,7 +152,19 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
 }
 
 
-
+- (void)leftActionItemImage:(NSString *)imageName target:(id)target action:(SEL)selector {
+    UIView *leftItemView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 65, 44)];
+    
+    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    btn.exclusiveTouch = TRUE;
+    btn.frame = leftItemView.bounds;
+    btn.contentEdgeInsets = UIEdgeInsetsMake(12, 18, 12, 18);
+    [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    [leftItemView addSubview:btn];
+    
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:leftItemView];
+}
 
 - (void)leftItemImage:(NSString *)imageName target:(id)target action:(SEL)selector{
     UIView *leftItemView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 65, 44)];
@@ -372,8 +384,8 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
 - (void)setIndicatorImage:(UIImage *)indicatorImage animated:(BOOL)animated{
     if(animated==YES){
         [self.tabBar setSelectionIndicatorImage:NTLoadImageFromBundle(@"null.png")];
-        NSArray *array=self.tabBar.items;
-        UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.frame.size.width/[array count], self.tabBar.frame.size.height)];
+        NSArray *array = self.tabBar.items;
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.frame.size.width/[array count], self.tabBar.frame.size.height)];
         imageView.image=indicatorImage;
         imageView.tag=9999;
         [self.tabBar addSubview:imageView];
@@ -384,7 +396,7 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
 
 
 - (void) setSelectColor:(UIColor *)selectColor bgColor:(UIColor *)bgColor{
-    [self.tabBar setSelectedImageTintColor:selectColor];
+//    [self.tabBar setSelectedImageTintColor:selectColor];
     [self.tabBar setTintColor:bgColor];
 }
 
@@ -427,11 +439,18 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
 }
 
 - (void) setSelectImageNames:(NSArray *)selectImageNames unSelectImageNames:(NSArray *)unSelectImageNames {
-    NSMutableArray *array=[NSMutableArray arrayWithCapacity:10];
-    for(int i=0;i<[selectImageNames count];i++){
-        UITabBarItem* item=[[UITabBarItem alloc]init];
-        item.tag=i;
-        [item setFinishedSelectedImage:[UIImage imageNamed: [selectImageNames objectAtIndex:i]] withFinishedUnselectedImage:[UIImage imageNamed: [unSelectImageNames objectAtIndex:i]]];
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
+    for(int i = 0; i < [selectImageNames count]; i++){
+        
+//        UITabBarItem* item=[[UITabBarItem alloc]init];
+//        item.tag=i;
+//        [item setFinishedSelectedImage:[UIImage imageNamed: [selectImageNames objectAtIndex:i]] withFinishedUnselectedImage:[UIImage imageNamed: [unSelectImageNames objectAtIndex:i]]];
+        
+        UITabBarItem* item = nil;
+        item = [item initWithTitle:@""
+                      image:[UIImage imageNamed: [unSelectImageNames objectAtIndex:i]]
+              selectedImage:[UIImage imageNamed: [selectImageNames objectAtIndex:i]]];
+        item.tag = i;
         [array addObject:item];
     }
     if([self.viewControllers count]!=[array count]){

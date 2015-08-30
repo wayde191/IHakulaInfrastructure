@@ -16,7 +16,7 @@
 #import "iHEngineConf.h"
 
 @interface iHEngine ()
-- (BOOL)setupLogSystem:(NSDictionary *)dic;
+- (BOOL)setupLogSystem;
 - (BOOL)setupNetworkMonitor:(NSString *)hostName;
 - (BOOL)setupRequestEnv:(NSString *)rootUrl;
 

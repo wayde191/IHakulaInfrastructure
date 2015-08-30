@@ -66,6 +66,7 @@
  */
 - (void)rightItemImage:(NSString *)imageName target:(id)target action:(SEL)selector title:(NSString *)title font:(UIFont *)font;
 
+- (void)leftActionItemImage:(NSString *)imageName target:(id)target action:(SEL)selector;
 
 /**
  *	@brief	创建导航条左按钮
