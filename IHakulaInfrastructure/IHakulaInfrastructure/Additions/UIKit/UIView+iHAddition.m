@@ -275,6 +275,17 @@ UIInterfaceOrientation IHInterfaceOrientation() {
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (UIImage*)snapShotInRect:(CGRect)rect {
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0.0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, -rect.origin.x, -rect.origin.y);
+    [self.layer renderInContext:context];
+    UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return screenshot;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)removeAllSubviews {

@@ -124,6 +124,8 @@
  */
 - (UIView*)ancestorOrSelfWithClass:(Class)cls;
 
+- (UIImage*)snapShotInRect:(CGRect)rect;
+
 /**
  * Removes all subviews.
  */
