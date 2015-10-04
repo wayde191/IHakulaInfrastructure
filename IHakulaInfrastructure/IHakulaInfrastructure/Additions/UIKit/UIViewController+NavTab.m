@@ -171,31 +171,14 @@ UIImage * NTLoadImageFromBundle(NSString *imageName) {
 
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-//    [btn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@_highlight", imageName]] forState:UIControlStateHighlighted];
     btn.exclusiveTouch = TRUE;
     btn.frame = leftItemView.bounds;
-    btn.contentEdgeInsets = UIEdgeInsetsMake(11, 18, 12, 34);
+    btn.contentEdgeInsets = UIEdgeInsetsMake(11, 0, 11, 35);
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [leftItemView addSubview:btn];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(35, 0, 40, 44)];
-    label.text = NSLocalizedString(@"rd_navigation_back_title", nil);
-    label.textColor = [UIColor whiteColor];
-    label.font = [UIFont regularSTHeitiFontOfSize:16];
-    [leftItemView addSubview:label];
-    
-//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    backBtn.frame = leftItemView.bounds;
-//    [backBtn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    
-//    [leftItemView addSubview:backBtn];
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:leftItemView];
-
-//    self.navigationItem.leftBarButtonItem=[self _createBarButton:imageName
-//                                                          target:target
-//                                                          action:selector];
 }
-
 
 - (void)leftItemImage:(NSString *)imageName target:(id)target action:(SEL)selector title:(NSString *)title{
     self.navigationItem.leftBarButtonItem=[self _createBarButton:imageName
