@@ -52,6 +52,7 @@
 #define IS_IOS_8    floorf([[UIDevice currentDevice].systemVersion floatValue]) == 8.0 ? 1 : 0
 
 #define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define IOS8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
 #define IPHONE_SCREEN_WIDTH         320
 #define IPAD_SCREEN_WIDTH           768
