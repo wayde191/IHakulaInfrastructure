@@ -103,6 +103,8 @@
 		BA0CB50E1B7E3803001294C3 /* iHLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CB5081B7E3803001294C3 /* iHLogManager.h */; };
 		BA0CB50F1B7E3803001294C3 /* iHLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CB5091B7E3803001294C3 /* iHLogManager.m */; };
 		BA0CB5151B7E3BF9001294C3 /* IHakulaInfrastructure.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */; };
+		BA47F1A91BE5D11100A3FC24 /* iHAnimationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA47F1A71BE5D11100A3FC24 /* iHAnimationKit.h */; settings = {ASSET_TAGS = (); }; };
+		BA47F1AA1BE5D11100A3FC24 /* iHAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47F1A81BE5D11100A3FC24 /* iHAnimationKit.m */; settings = {ASSET_TAGS = (); }; };
 		BA49C95D1B8CBB3E003F1113 /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49C9591B8CBB3E003F1113 /* UIColor-Expanded.h */; };
 		BA49C95E1B8CBB3E003F1113 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49C95A1B8CBB3E003F1113 /* UIColor-Expanded.m */; };
 		BA49C95F1B8CBB3E003F1113 /* UIViewController+NavTab.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49C95B1B8CBB3E003F1113 /* UIViewController+NavTab.h */; };
@@ -222,6 +224,8 @@
 		BA0CB5081B7E3803001294C3 /* iHLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHLogManager.h; sourceTree = "<group>"; };
 		BA0CB5091B7E3803001294C3 /* iHLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHLogManager.m; sourceTree = "<group>"; };
 		BA0CB5141B7E3BF9001294C3 /* IHakulaInfrastructure.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IHakulaInfrastructure.podspec; path = ../IHakulaInfrastructure.podspec; sourceTree = "<group>"; };
+		BA47F1A71BE5D11100A3FC24 /* iHAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHAnimationKit.h; sourceTree = "<group>"; };
+		BA47F1A81BE5D11100A3FC24 /* iHAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHAnimationKit.m; sourceTree = "<group>"; };
 		BA49C9591B8CBB3E003F1113 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
 		BA49C95A1B8CBB3E003F1113 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
 		BA49C95B1B8CBB3E003F1113 /* UIViewController+NavTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavTab.h"; sourceTree = "<group>"; };
@@ -424,6 +428,8 @@
 				BA0CB2ED1B7E3552001294C3 /* iHKits.h */,
 				BA0CB2EE1B7E3552001294C3 /* iHValidationKit.h */,
 				BA0CB2EF1B7E3552001294C3 /* iHValidationKit.m */,
+				BA47F1A71BE5D11100A3FC24 /* iHAnimationKit.h */,
+				BA47F1A81BE5D11100A3FC24 /* iHAnimationKit.m */,
 			);
 			path = Kits;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				BA0CB4F71B7E367F001294C3 /* NSDictionary_JSONExtensions.h in Headers */,
 				BA0CB38C1B7E3552001294C3 /* NSArray+iHAddition.h in Headers */,
 				BA0CB3AF1B7E3552001294C3 /* iHDataArchiver.h in Headers */,
+				BA47F1A91BE5D11100A3FC24 /* iHAnimationKit.h in Headers */,
 				BA0CB4B71B7E367F001294C3 /* iHAlertView.h in Headers */,
 				BA0CB5011B7E367F001294C3 /* XMLDictionary.h in Headers */,
 				BA0CB3AB1B7E3552001294C3 /* iHCommons.h in Headers */,
@@ -839,6 +846,7 @@
 				BA0CB5001B7E367F001294C3 /* CJSONSerializer.m in Sources */,
 				BA0CB3A51B7E3552001294C3 /* UITextField+iHAddition.m in Sources */,
 				BA0CB3B41B7E3552001294C3 /* iHImgOperation.m in Sources */,
+				BA47F1AA1BE5D11100A3FC24 /* iHAnimationKit.m in Sources */,
 				BA0CB50F1B7E3803001294C3 /* iHLogManager.m in Sources */,
 				BA0CB3A91B7E3552001294C3 /* iHCommonFunctions.m in Sources */,
 				BA0CB4B81B7E367F001294C3 /* iHAlertView.m in Sources */,
