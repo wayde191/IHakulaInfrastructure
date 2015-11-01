@@ -12,6 +12,7 @@
 
 + (void)animationAddToCart:(UIView *)containerView forGoods:(UIImageView *)goods fromStartPoint:(CGPoint)startPoint toEndPoint:(CGPoint)endPoint {
     
+    goods.layer.masksToBounds = YES;
     goods.layer.cornerRadius = goods.frame.size.height / 2.0f;
     goods.layer.borderColor = [[UIColor blackColor]CGColor];
     goods.layer.borderWidth = 1;
